@@ -1,0 +1,319 @@
+/* ----- GENERAL Styles 
+---------------------------------- */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  h1,h2,h3,
+  ul,ol,
+  p,
+  img {
+      margin-bottom: 1.5rem;
+  }
+  
+  body {
+    background: url(assets/wedding-landing-background.png) repeat center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+  }
+  
+  .location,
+  .program,
+  .gift,
+  .faq,
+  .contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #bd806e;
+  }
+  
+  a:hover {
+    color: #f6af67;
+    transition: color .15s ease-in-out;
+  }
+  
+  
+  
+  
+  /* ----- HEADER Styles 
+  ---------------------------------- */
+  
+  .cover {
+    background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: table;
+  }
+  
+  .content-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .content-text {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+  
+  .tagline::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 1px;
+    width: 12rem;
+    margin: .5rem auto;
+  }
+  
+  .content-text h1 {
+    font-size: 3rem;
+    color: #d2ba87;
+    margin-bottom: 0;
+  }
+  
+  .date {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    vertical-align: middle;
+  }
+  
+  .date::before,
+  .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+  
+  
+  /* ----- LOCATION Styles 
+  ---------------------------------- */
+  
+  .location-column img {
+    width: 7rem
+  }
+  
+  .location-column h3 {
+    font-weight: bold;
+  }
+  
+  .location-column div {
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .location-column::after {
+    content: "";
+    height: 1px;
+    width: 25vw;
+    display: block;
+    background-color: #020D02;
+    margin: 2rem auto;
+  }
+  
+  /* ----- PROGRAM Styles 
+  ---------------------------------- */
+  
+  
+  .program {
+    width: 100vw;
+    text-align: left;
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1rem;
+  }
+  
+  .program h2 {
+    font-family: 'Great Vibes', cursive;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .program p {
+    font-style: italic;
+  }
+  
+  .program ul {
+    letter-spacing: .025rem;
+  }
+  
+  
+  /* ----- GIFTS Styles 
+  ---------------------------------- */
+  
+  .gift img {
+    width: 7rem;
+  }
+  
+  .gift p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* ----- FAQ Styles 
+  ---------------------------------- */
+  
+  .faq {
+    width: 100vw;
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    text-align: center;
+  }
+  
+  .faq-column::after {
+    content: "";
+    height: 1px;
+    width: 50vw;
+    display: block;
+    background-color: #d2ba87;
+    margin: 2rem auto;
+  }
+  
+  .faq h2 {
+    margin-top: 1rem; 
+  }
+  
+  .faq p {
+    font-family: 'Muli', sans-serif;
+    text-align: left;
+  }
+  
+  .question {
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  
+  .answer {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  /* ----- FOOTER Styles 
+  ---------------------------------- */
+  
+  footer {
+    background-color: hsla(100,0%,0%,.6);
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-size: .9rem;
+    display: table;
+  }
+  
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+  }
+  
+  /* ----- DESKTOP Styles 
+  ---------------------------------- */
+  
+  @media (min-width: 768px) {
+    
+    .tagline {
+      text-transform: uppercase;
+    }
+    
+    .content-text h1 {
+      font-size: 6rem;
+    }
+    
+    .content-text {
+      width: 50%;
+    }
+    
+    .cover {
+      background-position: center;
+    }
+    
+    /* Location */
+    
+    .location-column {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem
+    }
+    
+    .location-column::after {
+      display: none;
+    }
+    
+    /* Program */
+    
+    .program-wrapper {
+      width: 30vw;
+      margin: 0 auto;
+    }
+    
+    /* FAQ */
+    
+    .faq-column {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 1.5rem;
+      margin: .6rem;
+    }
+    
+    .faq-column h3 {
+      text-align: left;
+    }
+    
+    .faq-column::after {
+      display: none;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
